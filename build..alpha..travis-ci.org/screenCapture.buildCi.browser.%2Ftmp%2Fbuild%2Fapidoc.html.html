@@ -1,0 +1,740 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/rwaldron/galileo-io">galileo-io (v0.10.0)</a>
+</h1>
+<h4>Intel Galileo &amp; Intel Edison IO Plugin for Johnny-Five JavaScript Robotics</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.galileo-io">module galileo-io</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.galileo-io.galileo-io">
+            function <span class="apidocSignatureSpan"></span>galileo-io
+            <span class="apidocSignatureSpan">(opts)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.galileo-io.Spi">
+            function <span class="apidocSignatureSpan">galileo-io.</span>Spi
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.galileo-io.Uart">
+            function <span class="apidocSignatureSpan">galileo-io.</span>Uart
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.galileo-io.pin">
+            function <span class="apidocSignatureSpan">galileo-io.</span>pin
+            <span class="apidocSignatureSpan">(setup)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.galileo-io.reset">
+            function <span class="apidocSignatureSpan">galileo-io.</span>reset
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">galileo-io.</span>Boards</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">galileo-io.</span>Spi.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">galileo-io.</span>Uart.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">galileo-io.</span>pin.prototype</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.galileo-io.Spi">module galileo-io.Spi</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.galileo-io.Spi.Spi">
+            function <span class="apidocSignatureSpan">galileo-io.</span>Spi
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.galileo-io.Spi.prototype">module galileo-io.Spi.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.galileo-io.Spi.prototype.equals">
+            function <span class="apidocSignatureSpan">galileo-io.Spi.prototype.</span>equals
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.galileo-io.Spi.prototype.getCPtr">
+            function <span class="apidocSignatureSpan">galileo-io.Spi.prototype.</span>getCPtr
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.galileo-io.Uart">module galileo-io.Uart</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.galileo-io.Uart.Uart">
+            function <span class="apidocSignatureSpan">galileo-io.</span>Uart
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.galileo-io.Uart.prototype">module galileo-io.Uart.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.galileo-io.Uart.prototype.equals">
+            function <span class="apidocSignatureSpan">galileo-io.Uart.prototype.</span>equals
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.galileo-io.Uart.prototype.getCPtr">
+            function <span class="apidocSignatureSpan">galileo-io.Uart.prototype.</span>getCPtr
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.galileo-io.pin">module galileo-io.pin</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.galileo-io.pin.pin">
+            function <span class="apidocSignatureSpan">galileo-io.</span>pin
+            <span class="apidocSignatureSpan">(setup)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">galileo-io.pin.</span>IO</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.galileo-io.pin.prototype">module galileo-io.pin.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.galileo-io.pin.prototype.initialize">
+            function <span class="apidocSignatureSpan">galileo-io.pin.prototype.</span>initialize
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.galileo-io.pin.prototype.read">
+            function <span class="apidocSignatureSpan">galileo-io.pin.prototype.</span>read
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.galileo-io.pin.prototype.write">
+            function <span class="apidocSignatureSpan">galileo-io.pin.prototype.</span>write
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.galileo-io" id="apidoc.module.galileo-io">module galileo-io</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.galileo-io.galileo-io" id="apidoc.element.galileo-io.galileo-io">
+        function <span class="apidocSignatureSpan"></span>galileo-io
+        <span class="apidocSignatureSpan">(opts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Board(opts) {
+  Emitter.call(this);
+
+  if (!(this instanceof Board)) {
+    return new Board(opts);
+  }
+
+  opts = opts || {};
+
+  var awaiting = [];
+  var state = {
+    i2c: opts.i2c !== undefined ? Object.assign({}, opts.i2c) : null,
+  };
+
+  priv.set(this, state);
+
+  this.name = Pin.IO.getPlatformName();
+  this.isReady = false;
+  this.aref = aref;
+  this.vref = vref;
+
+  // TODO:
+  //
+  // Once raw sysfs/gpio support is dropped, the
+  // use of Promises will no longer be necessary
+  //
+  this.pins = pinModes.map(function(pin, index) {
+    if (pin === null) {
+      return;
+    }
+
+    pin.isMiniboard = isMiniboard;
+    pin.isCarrierboard = isCarrierboard;
+    pin.addr = typeof pin.analogChannel === "number" ?
+      "A" + pin.analogChannel : index;
+
+    // EXPERIMENTAL
+    //
+    // var gpio = new Pin(pin);
+    // awaiting.push(
+    //   new Promise(function(resolve) {
+    //     gpio.on("ready", function() {
+    //       resolve();
+    //     });
+    //   })
+    // );
+    // return gpio;
+
+    return new Pin(pin);
+  }, this);
+
+  this.analogPins = this.pins.slice(14).map(function(pin, i) {
+    return i;
+  });
+
+  boards[0] = this;
+
+  // Connected to the device implicitly.
+  process.nextTick(this.emit.bind(this, "connect"));
+
+  // The "ready event" is needed to signal to Johnny-Five that
+  // communication with the Arduino pinouts is ready.
+  process.nextTick(function() {
+    this.isReady = true;
+    this.emit("ready");
+  }.bind(this));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.galileo-io.Spi" id="apidoc.element.galileo-io.Spi">
+        function <span class="apidocSignatureSpan">galileo-io.</span>Spi
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Spi() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.galileo-io.Uart" id="apidoc.element.galileo-io.Uart">
+        function <span class="apidocSignatureSpan">galileo-io.</span>Uart
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Uart() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.galileo-io.pin" id="apidoc.element.galileo-io.pin">
+        function <span class="apidocSignatureSpan">galileo-io.</span>pin
+        <span class="apidocSignatureSpan">(setup)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Pin(setup) {
+  Emitter.call(this);
+
+  Object.assign(this, remapped(setup, pinRemapping, defaults));
+
+  this.isAnalog = setup.addr[0] === "A";
+  this.gpio = this.isAnalog ? this.analogChannel : this.addr;
+  this.report = 0;
+  this.value = 0;
+
+  var state = {
+    isPwm: false,
+    direction: null,
+    mode: null,
+    period: null,
+    io: null,
+    pwm: null,
+    servoConfig: {
+      min: MIN_PULSE_WIDTH,
+      max: MAX_PULSE_WIDTH
+    }
+  };
+
+  priv.set(this, state);
+
+  // this.emit.bind(this, "ready");
+  // process.nextTick(this.emit.bind(this, "ready"));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.galileo-io.reset" id="apidoc.element.galileo-io.reset">
+        function <span class="apidocSignatureSpan">galileo-io.</span>reset
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">reset = function () {
+  reporting.length = 0;
+  read.isReading = false;
+  read.samplingInterval = 10;
+  clearInterval(read.interval);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.galileo-io.Spi" id="apidoc.module.galileo-io.Spi">module galileo-io.Spi</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.galileo-io.Spi.Spi" id="apidoc.element.galileo-io.Spi.Spi">
+        function <span class="apidocSignatureSpan">galileo-io.</span>Spi
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Spi() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.galileo-io.Spi.prototype" id="apidoc.module.galileo-io.Spi.prototype">module galileo-io.Spi.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.galileo-io.Spi.prototype.equals" id="apidoc.element.galileo-io.Spi.prototype.equals">
+        function <span class="apidocSignatureSpan">galileo-io.Spi.prototype.</span>equals
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function equals() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.galileo-io.Spi.prototype.getCPtr" id="apidoc.element.galileo-io.Spi.prototype.getCPtr">
+        function <span class="apidocSignatureSpan">galileo-io.Spi.prototype.</span>getCPtr
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getCPtr() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.galileo-io.Uart" id="apidoc.module.galileo-io.Uart">module galileo-io.Uart</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.galileo-io.Uart.Uart" id="apidoc.element.galileo-io.Uart.Uart">
+        function <span class="apidocSignatureSpan">galileo-io.</span>Uart
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Uart() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.galileo-io.Uart.prototype" id="apidoc.module.galileo-io.Uart.prototype">module galileo-io.Uart.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.galileo-io.Uart.prototype.equals" id="apidoc.element.galileo-io.Uart.prototype.equals">
+        function <span class="apidocSignatureSpan">galileo-io.Uart.prototype.</span>equals
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function equals() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.galileo-io.Uart.prototype.getCPtr" id="apidoc.element.galileo-io.Uart.prototype.getCPtr">
+        function <span class="apidocSignatureSpan">galileo-io.Uart.prototype.</span>getCPtr
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getCPtr() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.galileo-io.pin" id="apidoc.module.galileo-io.pin">module galileo-io.pin</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.galileo-io.pin.pin" id="apidoc.element.galileo-io.pin.pin">
+        function <span class="apidocSignatureSpan">galileo-io.</span>pin
+        <span class="apidocSignatureSpan">(setup)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Pin(setup) {
+  Emitter.call(this);
+
+  Object.assign(this, remapped(setup, pinRemapping, defaults));
+
+  this.isAnalog = setup.addr[0] === "A";
+  this.gpio = this.isAnalog ? this.analogChannel : this.addr;
+  this.report = 0;
+  this.value = 0;
+
+  var state = {
+    isPwm: false,
+    direction: null,
+    mode: null,
+    period: null,
+    io: null,
+    pwm: null,
+    servoConfig: {
+      min: MIN_PULSE_WIDTH,
+      max: MAX_PULSE_WIDTH
+    }
+  };
+
+  priv.set(this, state);
+
+  // this.emit.bind(this, "ready");
+  // process.nextTick(this.emit.bind(this, "ready"));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.galileo-io.pin.prototype" id="apidoc.module.galileo-io.pin.prototype">module galileo-io.pin.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.galileo-io.pin.prototype.initialize" id="apidoc.element.galileo-io.pin.prototype.initialize">
+        function <span class="apidocSignatureSpan">galileo-io.pin.prototype.</span>initialize
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">initialize = function () {
+  var state = priv.get(this);
+
+  if (this.supportedModes.length) {
+    if (this.isAnalog) {
+      state.io = new IO.Aio(this.gpio);
+    } else {
+      state.io = new IO.Gpio(this.gpio);
+
+      // Use memory mapped IO instead of sysfs
+      state.io.useMmap(true);
+
+      // Physical pin state:
+      //    - dir: OUT (0)
+      //    - state: LOW (0)
+      //
+      // Internal pin state:
+      //    - direction: out
+
+      state.io.dir(0);
+      state.io.write(0);
+      state.direction = "out";
+    }
+  } else {
+    throw new Error("Pin: " + this.gpio + " does not support this action");
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  },
+  direction: {
+set: function(value) {
+  var state = priv.get(this);
+  var direction = dirRemapping[value];
+
+  if (state.io === null) {
+    this.<span class="apidocCodeKeywordSpan">initialize</span>();
+  }
+
+  state.io.dir(IO[direction]);
+  state.direction = value;
+},
+get: function() {
+  return priv.get(this).direction;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.galileo-io.pin.prototype.read" id="apidoc.element.galileo-io.pin.prototype.read">
+        function <span class="apidocSignatureSpan">galileo-io.pin.prototype.</span>read
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">read = function (value) {
+  var state = priv.get(this);
+
+  if (state.io === null) {
+    this.initialize();
+  }
+
+  this.value = state.isPwm &amp;&amp; state.pwm !== null ?
+    state.pwm.read() :
+    state.io.read();
+
+  return this.value;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    if (boards.length) {
+board = boards[0];
+
+if (reporting.length) {
+  reporting.forEach(function(report, gpio) {
+    var pin = board.pins[report.index];
+    if (pin &amp;&amp; pin.read) {
+      processRead(board, report, pin.<span class="apidocCodeKeywordSpan">read</span>());
+    }
+  });
+}
+
+// Experimental
+// if (i2cQueue.length) {
+//   state = priv.get(board);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.galileo-io.pin.prototype.write" id="apidoc.element.galileo-io.pin.prototype.write">
+        function <span class="apidocSignatureSpan">galileo-io.pin.prototype.</span>write
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">write = function (value) {
+  var state = priv.get(this);
+
+  if (state.isPwm) {
+    var isServo = this.mode === 4;
+    var period = isServo ? MAX_SERVO_PERIOD : MAX_PWM_PERIOD;
+
+    if (!state.pwm) {
+      state.pwm = new IO.Pwm(this.addr);
+      state.pwm.enable(true);
+    }
+
+    if (state.period !== period) {
+      state.pwm.period_us(period);
+      state.period = period;
+    }
+
+    if (isServo) {
+      // Convert degrees to pulse
+      state.pwm.pulsewidth_us(pulse(value, state.servoConfig));
+    } else {
+      // Convert 8 bit value to % of 1
+      state.pwm.write(scale(value, 0, 255, 0, 1));
+    }
+  } else {
+
+    if (state.io === null) {
+      this.initialize();
+    }
+
+    if (this.direction !== "out") {
+      this.direction = "out";
+    }
+
+    state.io.write(value);
+  }
+
+  this.value = value;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    console.log("Port is open!");
+
+    // Once the port is open, you may read or write to it.
+    sp.on("data", function(data) {
+      console.log("Received: ", data);
+    });
+
+    sp.<span class="apidocCodeKeywordSpan">write</span>(new Buffer([0]));
+  });
+});
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
